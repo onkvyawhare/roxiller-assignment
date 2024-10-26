@@ -7,10 +7,10 @@ const port = process.env.PORT || 3000;
 const mongoUrl = process.env.MONGODB_URL;
 // console.log(mongoUrl);
 
-//cors
+//cors origin
 app.use(cors({
-    origin: 'http://localhost:3001', 
-    methods: ['GET', 'POST']
+    origin: 'https://roxiller-assignment.vercel.app', 
+    methods: ['GET']
   
 }
    
