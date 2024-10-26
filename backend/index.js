@@ -6,8 +6,10 @@ require("dotenv").config();
 const port = process.env.PORT || 3000;
 const mongoUrl = process.env.MONGODB_URL;
 // console.log(mongoUrl);
+
+//cors
 app.use(cors({
-    origin: 'https://localhost:3001', 
+    origin: 'http://localhost:3001', 
     methods: ['GET', 'POST']
   
 }

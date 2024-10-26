@@ -12,7 +12,7 @@ const Statistics = ({ selectedMonth }) => {
     const fetchStatistics = async () => {
       try {
         const response = await fetch(
-          `https://roxiler-assignment-backend.vercel.app/api/statistics?month=${selectedMonth}`
+          `https://roxiller-assignment.onrender.com/api/statistics?month=${selectedMonth}`
         );
         const data = await response.json();
         setStatistics(data);
