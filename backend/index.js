@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 const mongoUrl = process.env.MONGODB_URL;
 // console.log(mongoUrl);
 app.use(cors({
-    origin: 'https://example.com', 
+    origin: 'https://localhost:3001', 
     methods: ['GET', 'POST']
   
 }
