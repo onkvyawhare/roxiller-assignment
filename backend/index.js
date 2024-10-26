@@ -6,7 +6,13 @@ require("dotenv").config();
 const port = process.env.PORT || 3000;
 const mongoUrl = process.env.MONGODB_URL;
 // console.log(mongoUrl);
-app.use(cors());
+app.use(cors({
+    origin: 'https://example.com', 
+    methods: ['GET', 'POST']
+  
+}
+   
+));
 
 // Connecting to MongoDB Database
 mongoose
